@@ -4,7 +4,7 @@
 
 - **Asignatura:** Taller de GitHub y Control de Versiones
 - **Nombre del Proyecto:** Procesamiento de trámites y generación de resumen CSV
-- **Autor:** [Tu Nombre]
+- **Autor:** Rosa Samaniego
 - **Fecha:** 2026-08-11
 - **Rama de trabajo:** `feature/configuracion`
 
