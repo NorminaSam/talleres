@@ -1,3 +1,6 @@
+import re
+
+
 def validar_cedula(cedula):
     """Valida que la cédula tenga exactamente 10 dígitos numéricos."""
     if cedula is None:
@@ -24,8 +27,7 @@ def validar_correo(correo):
         return False
 
     correo = str(correo).strip()
-
-    if correo.count("@") != 1:
+    if not correo or correo.count("@") != 1:
         return False
 
     usuario, dominio = correo.split("@")
@@ -35,5 +37,5 @@ def validar_correo(correo):
     if "." not in dominio:
         return False
 
-    partes = dominio.split(".")
-    return all(parte for parte in partes)
+    patron = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+    return re.fullmatch(patron, correo) is not None

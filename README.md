@@ -1,22 +1,33 @@
-# 🧾 Validaciones de Datos
+# Talleres de GitHub con Copilot
 
-> Validación rápida y sencilla para formularios, registros y datos de usuarios.
+## Carátula del Proyecto
 
-Este proyecto contiene funciones útiles para verificar información básica antes de almacenarla o enviarla a un sistema.
+- **Asignatura:** Taller de GitHub y Control de Versiones
+- **Nombre del Proyecto:** Procesamiento de trámites y validaciones de datos
+- **Autor:** Rosa Samaniego
+- **Fecha:** 2026-08-11
+- **Rama de trabajo:** `feature/caso-integrador-final`
 
-## ✨ ¿Qué incluye?
+## Objetivo del proyecto
 
-- Cédula con 10 dígitos numéricos
-- Nombre y apellido con letras válidas
-- Correo electrónico con formato básico correcto
+Este repositorio combina dos líneas de trabajo: la validación de datos básicos y el procesamiento de trámites con resumen CSV. El objetivo es demostrar el uso de GitHub, control de versiones y automatización de pruebas en un proyecto práctico.
 
-## 🔎 Reglas de validación
+## Qué incluye
 
-- Cédula: debe tener exactamente 10 caracteres numéricos.
-- Nombre y apellido: no pueden estar vacíos y solo deben contener letras.
-- Correo: debe incluir un `@` y un dominio con punto, por ejemplo `usuario@ejemplo.com`.
+1. Validación de cédula, nombre/apellido y correo electrónico para formularios simples.
+2. Procesamiento de archivos CSV de trámites con validación y clasificación del tiempo.
+3. Generación de `resumen.csv` con métricas clave.
+4. Estructura lista para revisión, merge y publicación en GitHub.
 
-## 🚀 Uso rápido
+## Archivos clave
+
+- `validaciones.py`: funciones para validar cédula, nombre/apellido y correo.
+- `validacion.py`: validación básica adicional para cédula y correo.
+- `ejercicios_en_clase/procesar.py`: lectura, validación y resumen de archivos CSV.
+- `ejercicios_en_clase/datos/`: archivos de ejemplo para pruebas.
+- `ejercicios_en_clase/resumen.csv`: salida generada por el script.
+
+## Uso rápido
 
 ```python
 from validaciones import validar_cedula, validar_nombre_apellido, validar_correo
@@ -26,18 +37,20 @@ print(validar_nombre_apellido("Ana", "Pérez"))
 print(validar_correo("ana@ejemplo.com"))
 ```
 
-## 📌 Ejemplos de salida
+## Ejecutar la tarea
 
-```python
-validar_cedula("0991234567")         # True
-validar_nombre_apellido("Ana", "Pérez")  # True
-validar_correo("ana@ejemplo.com")    # True
+```bash
+python ejercicios_en_clase/procesar.py
 ```
 
-## 🧠 Importante
+## Publicación en GitHub
 
-Estas funciones son una validación básica ideal para formularios simples. Si tu proyecto necesita reglas más estrictas, puedes ampliarlas con validaciones adicionales según tus requisitos.
+```bash
+git add .
+git commit -m "Sincronizar rama con main"
+git push origin HEAD:caso_integrador_final
+```
 
-## 🏷️ Estado
+## Estado
 
-Proyecto ligero, fácil de entender y listo para usar en ejemplos o formularios básicos.
+Proyecto consolidado, listo para revisión con `main` y publicación de la rama final.
