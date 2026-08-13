@@ -3,72 +3,54 @@
 ## Carátula del Proyecto
 
 - **Asignatura:** Taller de GitHub y Control de Versiones
-- **Nombre del Proyecto:** Procesamiento de trámites y generación de resumen CSV
+- **Nombre del Proyecto:** Procesamiento de trámites y validaciones de datos
 - **Autor:** Rosa Samaniego
 - **Fecha:** 2026-08-11
-- **Rama de trabajo:** `feature/configuracion`
+- **Rama de trabajo:** `feature/caso-integrador-final`
 
 ## Objetivo del proyecto
 
-Este proyecto procesa archivos CSV de trámites, valida los datos, clasifica el tiempo y genera un archivo `resumen.csv` con métricas clave. Está organizado para que cualquier persona pueda entender el flujo de datos y cómo ejecutar la tarea.
+Este repositorio combina dos líneas de trabajo: la validación de datos básicos y el procesamiento de trámites con resumen CSV. El objetivo es demostrar el uso de GitHub, control de versiones y automatización de pruebas en un proyecto práctico.
 
-## Qué se hizo
+## Qué incluye
 
-1. Se agregó o mejoró el procesamiento de archivos CSV en `ejercicios_en_clase/procesar.py`.
-2. Se incluyó validación de cédula y fecha para cada registro.
-3. Se descartaron los registros inválidos o con datos incompletos.
-4. Se calculó el promedio de minutos solo con registros válidos.
-5. Se generó un archivo `resumen.csv` con las columnas:
-   - `archivo`
-   - `validos`
-   - `descartados`
-   - `promedio`
-6. Se preparó la rama `feature/configuracion` para publicar y revisar los cambios mediante Pull Request hacia `main`.
+1. Validación de cédula, nombre/apellido y correo electrónico para formularios simples.
+2. Procesamiento de archivos CSV de trámites con validación y clasificación del tiempo.
+3. Generación de `resumen.csv` con métricas clave.
+4. Estructura lista para revisión, merge y publicación en GitHub.
 
 ## Archivos clave
 
-- `ejercicios_en_clase/procesar.py`: lógica principal de lectura, validación y resumen de CSV.
-- `ejercicios_en_clase/datos/`: carpeta con los archivos de datos de ejemplo (`tramites_2026-08-03.csv`, `tramites_2026-08-04.csv`, `tramites_2026-08-05.csv`).
-- `ejercicios_en_clase/resumen.csv`: archivo de salida generado al ejecutar el script.
-- `validacion.py`: módulo con funciones de validación usadas en el proyecto.
+- `validaciones.py`: funciones para validar cédula, nombre/apellido y correo.
+- `validacion.py`: validación básica adicional para cédula y correo.
+- `ejercicios_en_clase/procesar.py`: lectura, validación y resumen de archivos CSV.
+- `ejercicios_en_clase/datos/`: archivos de ejemplo para pruebas.
+- `ejercicios_en_clase/resumen.csv`: salida generada por el script.
 
-## Instrucciones para ejecutar la tarea
+## Uso rápido
 
-1. Abrir una terminal en el directorio del repositorio:
-   ```bash
-   cd /d/CURSOS/GitHubCopilot/talleres/talleres
-   ```
-2. Cambiar a la rama de trabajo o crearla si aún no existe:
-   ```bash
-   git checkout -b feature/configuracion
-   ```
-3. Ejecutar el script de procesamiento:
-   ```bash
-   python ejercicios_en_clase/procesar.py
-   ```
-4. Revisar el archivo generado `ejercicios_en_clase/resumen.csv`.
+```python
+from validaciones import validar_cedula, validar_nombre_apellido, validar_correo
 
-## Cómo publicar los cambios en GitHub
+print(validar_cedula("0991234567"))
+print(validar_nombre_apellido("Ana", "Pérez"))
+print(validar_correo("ana@ejemplo.com"))
+```
 
-1. Agregar los cambios:
-   ```bash
-   git add .
-   ```
-2. Hacer commit:
-   ```bash
-   git commit -m "Agregar configuración y ajustes del procesamiento de trámites"
-   ```
-3. Enviar la rama al remoto:
-   ```bash
-   git push origin feature/configuracion
-   ```
-4. Crear el Pull Request hacia `main` (usando GitHub CLI o la web):
-   ```bash
-   gh pr create --base main --head feature/configuracion --title "Feature: configuración" --body "Se agregaron ajustes de configuración y mejoras en el procesamiento de trámites."
-   ```
+## Ejecutar la tarea
 
-## Qué verificar en el Pull Request
+```bash
+python ejercicios_en_clase/procesar.py
+```
 
-- Que exista un PR abierto de `feature/configuracion` hacia `main`.
-- Que la pestaña `Files changed` muestre los archivos modificados.
-- Que la descripción del PR explique los cambios realizados y el objetivo del reajuste.
+## Publicación en GitHub
+
+```bash
+git add .
+git commit -m "Sincronizar rama con main"
+git push origin HEAD:caso_integrador_final
+```
+
+## Estado
+
+Proyecto consolidado, listo para revisión con `main` y publicación de la rama final.

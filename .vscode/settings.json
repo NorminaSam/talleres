@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/.vscode/**": true,
+    "**/__pycache__/**": true,
+    "**/*.pyc": true,
+    "C:/Users/mbaldeon/.vscode/extensions/**": true,
+    "C:/Users/mbaldeon/.vscode/extensions/ms-python.vscode-pylance-2026.3.1/**": true,
+    "C:/Users/mbaldeon/.vscode/extensions/ms-python.vscode-pylance-2026.3.1/dist/typeshed-fallback/**": true
+  },
+  "search.exclude": {
+    "**/.vscode/**": true,
+    "**/__pycache__/**": true,
+    "**/*.pyc": true,
+    "C:/Users/mbaldeon/.vscode/extensions/**": true,
+    "C:/Users/mbaldeon/.vscode/extensions/ms-python.vscode-pylance-2026.3.1/**": true,
+    "C:/Users/mbaldeon/.vscode/extensions/ms-python.vscode-pylance-2026.3.1/dist/typeshed-fallback/**": true
+  }
+}

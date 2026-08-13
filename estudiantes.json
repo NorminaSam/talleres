@@ -1,0 +1,132 @@
+{
+  "1001": {
+    "identificacion": "1001",
+    "nombres": "Ana",
+    "apellidos": "Gómez",
+    "curso": "Python Básico",
+    "horario": "M",
+    "mod1": {
+      "numero": 1,
+      "horas_programadas": 20,
+      "horas_asistidas": 15.0
+    },
+    "mod2": {
+      "numero": 2,
+      "horas_programadas": 20,
+      "horas_asistidas": 15.0
+    },
+    "actividad1": {
+      "presentada": true,
+      "calificacion": 30.0
+    },
+    "actividad2": {
+      "presentada": true,
+      "calificacion": 30.0
+    },
+    "examen_final": 18.0
+  },
+  "1002": {
+    "identificacion": "1002",
+    "nombres": "Bruno",
+    "apellidos": "Ruiz",
+    "curso": "Python Básico",
+    "horario": "T",
+    "mod1": {
+      "numero": 1,
+      "horas_programadas": 20,
+      "horas_asistidas": 14.0
+    },
+    "mod2": {
+      "numero": 2,
+      "horas_programadas": 20,
+      "horas_asistidas": 16.0
+    },
+    "actividad1": {
+      "presentada": true,
+      "calificacion": 30.0
+    },
+    "actividad2": {
+      "presentada": true,
+      "calificacion": 30.0
+    },
+    "examen_final": null
+  },
+  "1003": {
+    "identificacion": "1003",
+    "nombres": "Carla",
+    "apellidos": "Méndez",
+    "curso": "Python Básico",
+    "horario": "M",
+    "mod1": {
+      "numero": 1,
+      "horas_programadas": 20,
+      "horas_asistidas": 16.0
+    },
+    "mod2": {
+      "numero": 2,
+      "horas_programadas": 20,
+      "horas_asistidas": 16.0
+    },
+    "actividad1": {
+      "presentada": true,
+      "calificacion": 25.0
+    },
+    "actividad2": {
+      "presentada": true,
+      "calificacion": 30.0
+    },
+    "examen_final": null
+  },
+  "1720548792": {
+    "identificacion": "1720548792",
+    "nombres": "erika",
+    "apellidos": "mora",
+    "curso": "gitlab",
+    "horario": "M",
+    "mod1": {
+      "numero": 1,
+      "horas_programadas": 20,
+      "horas_asistidas": 0.0
+    },
+    "mod2": {
+      "numero": 2,
+      "horas_programadas": 20,
+      "horas_asistidas": 0.0
+    },
+    "actividad1": {
+      "presentada": false,
+      "calificacion": null
+    },
+    "actividad2": {
+      "presentada": false,
+      "calificacion": null
+    },
+    "examen_final": null
+  },
+  "1716181456": {
+    "identificacion": "1716181456",
+    "nombres": "fdafasdf",
+    "apellidos": "dfasfa",
+    "curso": "adsfadsf",
+    "horario": "T",
+    "mod1": {
+      "numero": 1,
+      "horas_programadas": 20,
+      "horas_asistidas": 0.0
+    },
+    "mod2": {
+      "numero": 2,
+      "horas_programadas": 20,
+      "horas_asistidas": 0.0
+    },
+    "actividad1": {
+      "presentada": false,
+      "calificacion": null
+    },
+    "actividad2": {
+      "presentada": false,
+      "calificacion": null
+    },
+    "examen_final": null
+  }
+}
